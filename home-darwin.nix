@@ -13,6 +13,7 @@
     kubectx
     flux
     lazydocker
+    gh
 
 
     # Programming Languages & Runtimes
@@ -56,6 +57,7 @@
       g = "gemini";
       k = "kubectl";
       rebuild = "sudo darwin-rebuild switch --flake /Users/bence/nix";
+      gc = "nix-collect-garbage -d";
     };
   };
 
