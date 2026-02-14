@@ -83,6 +83,12 @@
 
     controlcenter = {
       BatteryShowPercentage = false;
+      Bluetooth = false;
+      Display = false;
+      FocusModes = false;
+      NowPlaying = false;
+      Sound = false;
+      AirDrop = false;
     };
 
     screensaver = {
@@ -111,7 +117,15 @@
       screencapture = {
         target = "clipboard";
       };
+
+      CustomUserPreferences = {
+          "com.apple.Spotlight" = {
+            MenuItemHidden = true;
+          };
+        };
+
   };
+
 
   # User settings
   users.users.bence = {
