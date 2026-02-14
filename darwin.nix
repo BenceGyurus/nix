@@ -135,4 +135,16 @@
 
   system.primaryUser = "bence";
 
+
+  launchd.user.agents.mount-smb = {
+      serviceConfig = {
+        ProgramArguments = [
+          "/sbin/mount_smbfs"
+          "//bence@192.168.1.76/data"
+          "/Volumes/data"
+        ];
+        RunAtLoad = true;
+      };
+    };
+
 }
