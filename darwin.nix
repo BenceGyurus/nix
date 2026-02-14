@@ -49,6 +49,9 @@
       # Productivity
       "orbstack"
       "opencode-desktop"
+
+      # Drive
+      "seafile-client"
     ];
 
 
@@ -56,6 +59,7 @@
     masApps = {
        "Tailscale" = 1475387142;
        "Windows App" = 1295203466;
+       "Xcode" = 497799835;
     };
   };
 
