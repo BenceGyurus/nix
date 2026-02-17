@@ -10,6 +10,7 @@
     terraform
     kubernetes-helm
     k9s
+    kubectl
     kubectx
     flux
     lazydocker
