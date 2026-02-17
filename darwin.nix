@@ -56,6 +56,7 @@
       # Drive
       "seafile-client"
       "onedrive"
+      "seadrive"
     ];
 
 
