@@ -15,6 +15,7 @@
     flux
     lazydocker
     gh
+    talosctl
 
 
     # Programming Languages & Runtimes
@@ -59,55 +60,58 @@
       k = "kubectl";
       rebuild = "sudo darwin-rebuild switch --flake /Users/bence/nix";
       gc = "nix-collect-garbage -d";
+      u = "nix flake update --flake /Users/bence/nix && sudo darwin-rebuild switch --flake /Users/bence/nix && sudo nix-collect-garbage -d && sudo nix-store --optimise";
     };
   };
 
-  programs.zed-editor = {
-    enable = true;
-    extensions = [ "nix" "python" "javascript" ];
-    userSettings = {
-      theme = {
-        mode = "system";
-        dark = "One Dark";
-        light = "One Light";
-      };
-      hour_format = "hour24";
-      vim_mode = false;
+  # programs.zed-editor = {
+  #   enable = true;
+  #   extensions = [ "nix" "python" "javascript" "go" ];
+  #   userSettings = {
+  #     theme = {
+  #       mode = "system";
+  #       dark = "One Dark";
+  #       light = "One Light";
+  #     };
+  #     hour_format = "hour24";
+  #     vim_mode = false;
 
-      load_direnv = "shell_hook";
-      base_keymap = "VSCode";
+  #     load_direnv = "shell_hook";
+  #     base_keymap = "VSCode";
 
-      assistant = {
-        enabled = false;
-      };
+  #     assistant = {
+  #       enabled = false;
+  #     };
 
-      terminal = {
-            alternate_scroll = "off";
-            blinking = "off";
-            copy_on_select = false;
-            dock = "bottom";
-            detect_venv = {
-              on = {
-                directories = [ ".env" "env" ".venv" "venv" ];
-                activate_script = "default";
-              };
-            };
-            env = {
-              TERM = "alacritty";
-            };
-            line_height = "comfortable";
-            option_as_meta = false;
-            button = false;
-            shell = "system";
-            toolbar = {
-              title = true;
-            };
-            working_directory = "current_project_directory";
-          };
+  #     terminal = {
+  #           alternate_scroll = "off";
+  #           blinking = "off";
+  #           copy_on_select = false;
+  #           dock = "bottom";
+  #           detect_venv = {
+  #             on = {
+  #               directories = [ ".env" "env" ".venv" "venv" ];
+  #               activate_script = "default";
+  #             };
+  #           };
+  #           env = {
+  #             TERM = "alacritty";
+  #           };
+  #           line_height = "comfortable";
+  #           option_as_meta = false;
+  #           button = false;
+  #           shell = "system";
+  #           toolbar = {
+  #             title = true;
+  #           };
+  #           working_directory = "current_project_directory";
+  #         };
 
 
-    };
-  };
+  #   };
+  # };
+
+
 
   programs.home-manager.enable = true;
 

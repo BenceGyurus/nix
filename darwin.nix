@@ -57,6 +57,9 @@
       "seafile-client"
       "onedrive"
       "seadrive"
+
+      #chat
+      "mattermost"
     ];
 
 
