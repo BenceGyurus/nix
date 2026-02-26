@@ -16,6 +16,7 @@
     lazydocker
     gh
     talosctl
+    docker
 
 
     # Programming Languages & Runtimes
@@ -55,7 +56,7 @@
   programs.zsh = {
     enable = true;  # Fontos, hogy engedélyezd a zsh menedzselését
     shellAliases = {
-      oc = "sudo opencode";
+      oc = "opencode";
       g = "gemini";
       k = "kubectl";
       rebuild = "sudo darwin-rebuild switch --flake /Users/bence/nix";

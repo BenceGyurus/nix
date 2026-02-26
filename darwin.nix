@@ -29,7 +29,13 @@
     onActivation.cleanup = "zap"; # zap removes all not defined casks, set it to "disabled" to keep them
 
     brews = [
+      #Ai
       "opencode"
+
+      #grafika szar
+      "glfw"
+      "glm"
+
     ];
 
     casks = [
@@ -44,7 +50,7 @@
       "stats"
 
       #IDEs
-      "zed"
+      "vscodium"
 
       # Productivity
       "orbstack"
@@ -60,6 +66,11 @@
 
       #chat
       "mattermost"
+
+      #devtools
+      "postman"
+      "tableplus"
+      "clion"
     ];
 
 
@@ -67,6 +78,7 @@
     masApps = {
        "Tailscale" = 1475387142;
        "Windows App" = 1295203466;
+       "Microsoft Word" = 462054704;    #fúj
     };
   };
 
@@ -83,7 +95,6 @@
       largesize = 40;
       persistent-apps = [
           "/Applications/Warp.app"
-          "/Applications/Zed.app"
           "/Applications/Brave Browser.app"
       ];
       persistent-others = [];
