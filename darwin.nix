@@ -36,6 +36,9 @@
       "glfw"
       "glm"
 
+      #kszk levlista service
+      "poetry"
+
     ];
 
     casks = [
