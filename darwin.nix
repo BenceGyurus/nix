@@ -58,6 +58,7 @@
       # Productivity
       "orbstack"
       "opencode-desktop"
+      "obsidian"
 
       #remote desktop
       "rustdesk"
@@ -89,8 +90,11 @@
   security.pam.services.sudo_local.touchIdAuth = true;
   system.startup.chime = false;
 
+  power.sleep.display = 10;
+
   system.defaults = {
     dock = {
+      expose-group-apps = true;
       autohide = false;
       magnification = true;
       show-recents = false;
@@ -105,6 +109,14 @@
       mru-spaces = false;
     };
 
+    loginwindow = {
+      SHOWFULLNAME = false;
+      SleepDisabled = false;
+      RestartDisabled = false;
+      ShutDownDisabled = false;
+      LoginwindowText = "NIX darwin flake warning";
+    };
+
 
     controlcenter = {
       BatteryShowPercentage = false;
@@ -117,6 +129,7 @@
     };
 
     screensaver = {
+      askForPasswordDelay = 0;
       askForPassword = true;
     };
 
@@ -124,6 +137,8 @@
       ShowPathbar = true;
       FXPreferredViewStyle = "Nlsv";
       FXRemoveOldTrashItems = true;
+      ShowStatusBar = true;
+      AppleShowAllFiles = true;
     };
 
     NSGlobalDomain = {
@@ -139,13 +154,22 @@
         AppWindowGroupingBehavior = true;
       };
 
+      SoftwareUpdate.AutomaticallyInstallMacOSUpdates = false;
+
       screencapture = {
         target = "clipboard";
+      };
+
+      WindowManager = {
+        StandardHideWidgets = true;
       };
 
       CustomUserPreferences = {
           "com.apple.Spotlight" = {
             MenuItemHidden = true;
+          };
+          "com.apple.controlcenter" = {
+            VPN = 18;
           };
         };
 
