@@ -114,7 +114,7 @@
       SleepDisabled = false;
       RestartDisabled = false;
       ShutDownDisabled = false;
-      LoginwindowText = "NIX darwin flake warning";
+      LoginwindowText = "nix darwin flake build";
     };
 
 
