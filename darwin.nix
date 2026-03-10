@@ -52,6 +52,9 @@
       "warp"
       "stats"
 
+      #Egyetem
+      "vlc"
+
       #IDEs
       "vscodium"
 
@@ -75,6 +78,7 @@
       "postman"
       "tableplus"
       "clion"
+      "wireshark-app"
     ];
 
 

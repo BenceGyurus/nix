@@ -57,7 +57,7 @@
     enable = true;  # Fontos, hogy engedélyezd a zsh menedzselését
     shellAliases = {
       oc = "opencode";
-      g = "gemini";
+      g = "npx gemini";
       k = "kubectl";
       rebuild = "sudo darwin-rebuild switch --flake /Users/bence/nix";
       gc = "nix-collect-garbage -d";
