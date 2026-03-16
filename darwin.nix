@@ -52,8 +52,6 @@
       "warp"
       "stats"
 
-      #Egyetem
-      "vlc"
 
       #IDEs
       "vscodium"
