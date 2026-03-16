@@ -79,6 +79,9 @@
       "tableplus"
       "clion"
       "wireshark-app"
+
+      #passwords
+      "bitwarden"
     ];
 
 
