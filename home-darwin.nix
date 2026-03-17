@@ -24,6 +24,7 @@
     pnpm
     openjdk
     python313
+    go
 
     # Version Control & Git Tools
     lazygit
