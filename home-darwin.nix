@@ -60,7 +60,7 @@
       g = "npx gemini";
       k = "kubectl";
       rebuild = "sudo darwin-rebuild switch --flake /Users/bence/nix";
-      gc = "nix-collect-garbage -d";
+      gc = "sudo nix-collect-garbage -d && sudo nix-store --optimise && sudo darwin-rebuild switch --flake /Users/bence/nix";
       u = "nix flake update --flake /Users/bence/nix && sudo darwin-rebuild switch --flake /Users/bence/nix && sudo nix-collect-garbage -d && sudo nix-store --optimise";
     };
   };

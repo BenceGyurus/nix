@@ -14,19 +14,22 @@
       keep-outputs = true
       keep-derivations = true
     '';
-    # Garbage collection
     gc = {
       automatic = true;
-      options = "--delete-older-than 10d";
+      interval = { Weekday = 0; Hour = 2; Minute = 0; };
+      options = "--delete-older-than 30d";
     };
-
-
+    optimise.automatic = true;
   };
 
   # Brew packages
   homebrew = {
     enable = true;
-    onActivation.cleanup = "zap"; # zap removes all not defined casks, set it to "disabled" to keep them
+    onActivation = {
+      cleanup = "zap";
+      autoUpdate = true;
+      upgrade = true;
+    };
 
     brews = [
       #Ai
@@ -49,7 +52,7 @@
       "raycast"
       "flux-app"
       "hiddenbar"
-      "warp"
+      "ghostty"
       "stats"
 
 
@@ -106,8 +109,9 @@
       tilesize = 25;
       largesize = 40;
       persistent-apps = [
-          "/Applications/Warp.app"
           "/Applications/Brave Browser.app"
+          "/Applications/Ghostty.app"
+          "/Applications/VSCodium.app"
       ];
       persistent-others = [];
       mineffect = "scale";
