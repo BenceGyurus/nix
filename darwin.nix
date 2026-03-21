@@ -42,6 +42,9 @@
       #kszk levlista service
       "poetry"
 
+      # Bencus
+      "bencetotht/prm/prm"
+
     ];
 
     casks = [
@@ -56,6 +59,8 @@
       "stats"
 
 
+
+
       #IDEs
       "vscodium"
 
@@ -63,9 +68,11 @@
       "orbstack"
       "opencode-desktop"
       "obsidian"
+      "gimp"
 
       #remote desktop
       "rustdesk"
+      "aldente"
 
       # Drive
       "seafile-client"
@@ -80,6 +87,9 @@
       "tableplus"
       "clion"
       "wireshark-app"
+
+      #komhal
+      "appcleaner"
 
       #passwords
       "bitwarden"
