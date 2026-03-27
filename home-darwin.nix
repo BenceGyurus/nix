@@ -22,7 +22,8 @@
     # Programming Languages & Runtimes
     nodejs
     pnpm
-    openjdk
+    jdk21
+    maven
     python313
     go
 
