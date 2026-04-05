@@ -42,8 +42,6 @@
       #kszk levlista service
       "poetry"
 
-      # Bencus
-      "bencetotht/prm/prm"
 
     ];
 
@@ -88,8 +86,6 @@
       "clion"
       "wireshark-app"
 
-      #komhal
-      "appcleaner"
 
       #passwords
       "bitwarden"

@@ -31,8 +31,6 @@
     lazygit
 
 
-    # Editors
-    gemini-cli
 
     # Tool for setting default browser
     duti
