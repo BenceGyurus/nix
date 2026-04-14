@@ -56,7 +56,8 @@
       "ghostty"
       "stats"
 
-
+      # security
+      "clamxav"
 
 
       #IDEs
@@ -85,6 +86,9 @@
       "tableplus"
       "clion"
       "wireshark-app"
+      "mongodb-compass"
+
+      "codex"
 
 
       #passwords
