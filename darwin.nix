@@ -56,9 +56,6 @@
       "ghostty"
       "stats"
 
-      # security
-      "clamxav"
-
 
       #IDEs
       "vscodium"
@@ -87,7 +84,7 @@
       "clion"
       "wireshark-app"
       "mongodb-compass"
-
+      "t3-code"
       "codex"
 
 
@@ -176,7 +173,7 @@
       SoftwareUpdate.AutomaticallyInstallMacOSUpdates = false;
 
       screencapture = {
-        target = "clipboard";
+        target = "clipboard"; # preview
       };
 
       WindowManager = {
