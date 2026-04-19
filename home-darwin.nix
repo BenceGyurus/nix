@@ -1,5 +1,9 @@
 { config, lib, pkgs, programs, ... }:
 
+let
+  jdk = pkgs.jdk21;
+  jdkHome = "${jdk}/lib/openjdk";
+in
 {
   home.username = "bence";
   home.stateVersion = "25.05";
@@ -52,6 +56,22 @@
          "pejdijmoenmkgeppbflobdenhhabjlaj"
        ];
   };
+
+  home.sessionVariables = {
+    JAVA_HOME = jdkHome;
+  };
+
+  home.file."Library/Application Support/VSCodium/User/settings.json".text =
+    builtins.toJSON {
+      "java.jdt.ls.java.home" = jdkHome;
+      "java.configuration.runtimes" = [
+        {
+          name = "JavaSE-21";
+          path = jdkHome;
+          default = true;
+        }
+      ];
+    };
 
   programs.zsh = {
     enable = true;  # Fontos, hogy engedélyezd a zsh menedzselését

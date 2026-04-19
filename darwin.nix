@@ -55,6 +55,9 @@
       "hiddenbar"
       "ghostty"
       "stats"
+      "battery"
+      "chatgpt"
+      "jordanbaird-ice"
 
 
       #IDEs
