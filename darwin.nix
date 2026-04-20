@@ -52,11 +52,9 @@
       # Utilities
       "raycast"
       "flux-app"
-      "hiddenbar"
       "ghostty"
       "stats"
       "battery"
-      "chatgpt"
       "jordanbaird-ice"
 
 

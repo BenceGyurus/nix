@@ -30,6 +30,7 @@ in
     maven
     python313
     go
+    chatgpt
 
     # Version Control & Git Tools
     lazygit
