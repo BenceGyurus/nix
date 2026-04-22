@@ -55,7 +55,7 @@
       "ghostty"
       "stats"
       "battery"
-      "jordanbaird-ice"
+      "hiddenbar"
 
 
       #IDEs
@@ -86,7 +86,7 @@
       "wireshark-app"
       "mongodb-compass"
       "t3-code"
-      "codex"
+      "codex-app"
 
 
       #passwords
