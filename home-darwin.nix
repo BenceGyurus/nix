@@ -22,7 +22,6 @@ in
     talosctl
     docker
 
-
     # Programming Languages & Runtimes
     nodejs
     pnpm

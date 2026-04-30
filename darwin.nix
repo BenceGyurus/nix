@@ -38,6 +38,7 @@
       #grafika szar
       "glfw"
       "glm"
+      "openjdk@21"
 
       #kszk levlista service
       "poetry"
@@ -48,6 +49,8 @@
     casks = [
       # Browsers
       "brave-browser"
+
+      "balenaetcher"
 
       # Utilities
       "raycast"
@@ -69,7 +72,6 @@
 
       #remote desktop
       "rustdesk"
-      "aldente"
 
       # Drive
       "seafile-client"
@@ -85,7 +87,6 @@
       "clion"
       "wireshark-app"
       "mongodb-compass"
-      "t3-code"
       "codex-app"
 
 
