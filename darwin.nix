@@ -49,6 +49,7 @@
     casks = [
       # Browsers
       "brave-browser"
+      "firefox"
 
       "balenaetcher"
 
@@ -59,7 +60,6 @@
       "stats"
       "battery"
       "hiddenbar"
-
 
       #IDEs
       "vscodium"

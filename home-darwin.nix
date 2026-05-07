@@ -33,7 +33,7 @@ in
 
     # Version Control & Git Tools
     lazygit
-
+    
 
 
     # Tool for setting default browser
