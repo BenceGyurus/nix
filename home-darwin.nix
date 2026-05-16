@@ -8,6 +8,13 @@ in
   home.username = "bence";
   home.stateVersion = "25.05";
 
+  imports = [./flakes/ghostty.nix];
+
+  home.sessionVariables = {
+    PAGER = "less";
+    MANPAGER = "sh -c 'col -bx | bat -l man -p'";
+  };
+
 
   home.packages = with pkgs; [
     # DevOps & Infrastructure
@@ -34,7 +41,7 @@ in
     # Version Control & Git Tools
     lazygit
     
-
+    appcleaner
 
     # Tool for setting default browser
     duti
@@ -73,9 +80,43 @@ in
       ];
     };
 
+  programs.zoxide = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+
+  programs.fzf = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+
+  programs.eza = {
+    enable = true;
+    icons = "auto";
+    git = true;
+    extraOptions = [
+      "--group-directories-first"
+      "--header"
+    ];
+  };
+
+  programs.bat = {
+    enable = true;
+    config = {
+      theme = "catppuccin-mocha";
+    };
+  };
+
   programs.zsh = {
     enable = true;  # Fontos, hogy engedélyezd a zsh menedzselését
+    enableCompletion = true;
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
     shellAliases = {
+      ls = "eza --icons";
+      ll = "eza -l --icons --git";
+      lt = "eza --tree --icons";
+      cat = "bat";
       oc = "opencode";
       g = "npx gemini";
       k = "kubectl";
@@ -131,8 +172,6 @@ in
 
   #   };
   # };
-
-
 
   programs.home-manager.enable = true;
 

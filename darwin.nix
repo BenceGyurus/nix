@@ -89,7 +89,6 @@
       "mongodb-compass"
       "codex-app"
 
-
       #passwords
       "bitwarden"
     ];
