@@ -8,7 +8,7 @@ in
   home.username = "bence";
   home.stateVersion = "25.05";
 
-  imports = [./flakes/ghostty.nix];
+  imports = [./modules/ghostty.nix];
 
   home.sessionVariables = {
     PAGER = "less";
