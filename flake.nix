@@ -49,7 +49,9 @@
 
         ./darwin.nix
 
-        ./flakes/tlauncher.nix
+        ./modules/polymc.nix
+
+        #./flakes/tlauncher.nix
 
         home-manager.darwinModules.home-manager {
           home-manager.useGlobalPkgs = true;

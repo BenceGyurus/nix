@@ -34,6 +34,7 @@
     brews = [
       #Ai
       "opencode"
+      "openvpn"
 
       #grafika szar
       "glfw"
@@ -80,14 +81,15 @@
 
       #chat
       "mattermost"
+      "openvpn-connect"
 
       #devtools
       "postman"
       "tableplus"
-      "clion"
       "wireshark-app"
       "mongodb-compass"
       "codex-app"
+      "antigravity"
 
       #passwords
       "bitwarden"

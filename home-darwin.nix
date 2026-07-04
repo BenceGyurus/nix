@@ -1,8 +1,8 @@
 { config, lib, pkgs, programs, ... }:
 
 let
-  jdk = pkgs.jdk21;
-  jdkHome = "${jdk}/lib/openjdk";
+  jdk = pkgs.jdk25;
+  jdkHome = "${jdk}"; 
 in
 {
   home.username = "bence";
@@ -32,7 +32,7 @@ in
     # Programming Languages & Runtimes
     nodejs
     pnpm
-    jdk21
+    jdk25
     maven
     python313
     go
@@ -73,7 +73,7 @@ in
       "java.jdt.ls.java.home" = jdkHome;
       "java.configuration.runtimes" = [
         {
-          name = "JavaSE-21";
+          name = "JavaSE-25";
           path = jdkHome;
           default = true;
         }
