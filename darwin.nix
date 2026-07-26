@@ -43,7 +43,7 @@
 
       #kszk levlista service
       "poetry"
-
+      "fluxcd/tap/flux"
 
     ];
 
@@ -51,7 +51,6 @@
       # Browsers
       "brave-browser"
       "firefox"
-
       "balenaetcher"
 
       # Utilities

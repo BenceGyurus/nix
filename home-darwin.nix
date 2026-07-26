@@ -34,10 +34,10 @@ in
     pnpm
     jdk25
     maven
-    python313
+    python312
     go
     chatgpt
-
+    
     # Version Control & Git Tools
     lazygit
     
