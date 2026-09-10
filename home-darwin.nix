@@ -24,19 +24,19 @@ in
     kubectl
     kubectx
     flux
-    lazydocker
     gh
     talosctl
     docker
+    fluxcd
+    uv
+    winbox
 
     # Programming Languages & Runtimes
     nodejs
     pnpm
     jdk25
-    maven
     python312
     go
-    chatgpt
     
     # Version Control & Git Tools
     lazygit

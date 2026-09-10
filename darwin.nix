@@ -33,7 +33,8 @@
 
     brews = [
       #Ai
-      "opencode"
+      
+      #vpn
       "openvpn"
 
       #grafika szar
@@ -43,7 +44,6 @@
 
       #kszk levlista service
       "poetry"
-      "fluxcd/tap/flux"
 
     ];
 
@@ -51,24 +51,22 @@
       # Browsers
       "brave-browser"
       "firefox"
-      "balenaetcher"
+      "google-chrome"
 
       # Utilities
-      "raycast"
       "flux-app"
       "ghostty"
-      "stats"
-      "battery"
       "hiddenbar"
 
       #IDEs
       "vscodium"
+      "android-studio"
 
       # Productivity
       "orbstack"
-      "opencode-desktop"
       "obsidian"
       "gimp"
+      "stats"
 
       #remote desktop
       "rustdesk"
@@ -81,6 +79,7 @@
       #chat
       "mattermost"
       "openvpn-connect"
+      "signal"
 
       #devtools
       "postman"
@@ -89,6 +88,8 @@
       "mongodb-compass"
       "codex-app"
       "antigravity"
+      "opencode-desktop"
+      "copilot-cli"
 
       #passwords
       "bitwarden"
